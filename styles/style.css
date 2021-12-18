@@ -1,0 +1,129 @@
+/*=== RESET ===*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --body-color: #0693f1;
+  --text-color: #000000;
+  --button-text: #ffffff;
+  --button-color-alt: #0645f1;
+  --base-color: #cecece;
+
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1.3rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+}
+
+body {
+  font: 400 1rem var(--body-font);
+  color: var(--text-color);
+  background-color: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--text-color);
+  -webkit-font-smoothing: auto;
+}
+
+.container {
+  background-color: var(--button-text);
+  margin: 10rem;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.list {
+  background-color: var(--base-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+span {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+span input {
+  width: 1rem;
+  margin: 0 0.5rem;
+  align-items: center;
+}
+
+:checked + p {
+  text-decoration: line-through;
+  color: grey;
+}
+
+span p {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+span a {
+  background-color: var(--body-color);
+  color: var(--button-text);
+  margin: 0.5rem 0;
+  padding: 0.1rem;
+  border-radius: 0.25rem;
+  height: 1.6rem;
+  width: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: var(--button-color-alt);
+}
+
+.form {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+input {
+  background-color: var(--base-color);
+  height: 2.4rem;
+  border-radius: 0.25rem;
+  border: none;
+  font: 500 1rem var(--body-font);
+  padding: 0 1rem;
+  margin-right: 0.8rem;
+  width: 80%;
+}
+
+.button {
+  background-color: var(--body-color);
+  color: var(--button-text);
+  height: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.8rem;
+  border-radius: 0.25rem;
+  border: none;
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--button-color-alt);
+}
